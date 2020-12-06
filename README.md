@@ -51,3 +51,6 @@ Please read the [contribution guidelines](https://github.com/opencv/opencv/wiki/
 	/opt/opencv/release$ exit
 
 	/opt/opencv/release$ cd ~
+  
+  # Test installation
+    $ pkg-config --modversion opencv
