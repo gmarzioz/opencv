@@ -48,6 +48,6 @@ Please read the [contribution guidelines](https://github.com/opencv/opencv/wiki/
 
 	/opt/opencv/release$ ldconfig
  
-/opt/opencv/release$ exit
- 
-/opt/opencv/release$ cd ~
+  /opt/opencv/release$ exit
+
+  /opt/opencv/release$ cd ~
