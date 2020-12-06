@@ -41,15 +41,21 @@ Please read the [contribution guidelines](https://github.com/opencv/opencv/wiki/
 	/opt/opencv$ cd release
 
 	/opt/opencv/release$ cmake -D BUILD_TIFF=ON -D WITH_CUDA=OFF -D ENABLE_AVX=OFF -D WITH_OPENGL=OFF -D WITH_OPENCL=OFF -D WITH_IPP=OFF -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_EIGEN=OFF -D WITH_V4L=OFF -D WITH_VTK=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules /opt/opencv
-	/opt/opencv/release$ make -j4
+	/opt/opencv/release$ sudo make -j4
 
-	/opt/opencv/release$ make install
+	/opt/opencv/release$ sudo make install
 
 	/opt/opencv/release$ ldconfig
  
 	/opt/opencv/release$ exit
 
 	/opt/opencv/release$ cd ~
+  
+  # Rebuild
+  
+      rm ../CMakeCache.txt
+      
+ then rebuild
   
   # Test installation
     $ pkg-config --modversion opencv
