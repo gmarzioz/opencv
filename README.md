@@ -59,3 +59,19 @@ Please read the [contribution guidelines](https://github.com/opencv/opencv/wiki/
   
   # Test installation
     $ pkg-config --modversion opencv
+    
+  # Instrall traincascade from 3.4.0
+  For an error build traincascade from https://github.com/opencv/opencv/archive/3.4.0.tar.gz
+  
+	sudo mkdir /opt/opencv34
+	sudo chown -R $USER /opt/opencv34
+	cd /opt/opencv43
+	wget https://github.com/opencv/opencv/archive/3.4.0.tar.gz
+	tar -xvpf 3.4.0.tar.gz
+	cd opencv-3.4.0/
+	mkdir build & cd build
+	ccmake ..
+	cd apps/traincascade
+	make
+	cd /usr/local/bin/
+	sudo ln -s /opt/opencv34/opencv-3.4.0/build/bin/opencv_traincascade
