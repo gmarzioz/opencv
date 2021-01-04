@@ -60,7 +60,7 @@ Please read the [contribution guidelines](https://github.com/opencv/opencv/wiki/
   # Test installation
     $ pkg-config --modversion opencv
     
-  # Instrall traincascade from 3.4.0
+  # Install traincascade from 3.4.0
   For an error build traincascade from https://github.com/opencv/opencv/archive/3.4.0.tar.gz
   
 	sudo mkdir /opt/opencv34
